@@ -166,3 +166,53 @@ catalogo.forEach(producto => {
   }
 });
 
+//Document.querySelector(selectorCSS)
+// Seleccionar el elemento con el ID 'titulo-principal'
+const tituloPrincipal = document.querySelector('#titulo-principal');
+ 
+// Seleccionar el primer elemento con la clase 'item-destacado'
+const itemDestacado = document.querySelector('.item-destacado');
+ 
+// Seleccionar el primer <a> dentro de un <li>
+const primerLink = document.querySelector('li a');
+
+// Document.querySelectorAll(selectorCSS)
+// Seleccionar todos los párrafos dentro de un <article>
+const todosLosParrafos = document.querySelectorAll('article p');
+ 
+// Ahora podemos iterar sobre ellos
+todosLosParrafos.forEach(parrafo => {
+  parrafo.style.lineHeight = '1.6'; // Aumentamos el interlineado de cada párrafo
+});
+
+// Manipular los Elementos Seleccionados
+// Cambiar el Contenido
+tituloPrincipal.textContent = 'Mueblería Jota - ¡Nuevos Productos!';
+
+// Cambiar Estilos
+tituloPrincipal.style.color = 'navy';
+tituloPrincipal.style.backgroundColor = '#f1f1f1';
+
+const menu = document.querySelector('#menu-mobile');
+menu.classList.add('abierto');
+
+// Crear y Añadir Nuevos Elementos
+// 1. Seleccionamos el contenedor padre (la lista <ul>)
+const listaCatalogo = document.querySelector('#lista-de-muebles');
+ 
+// 2. Creamos el nuevo elemento <li> en memoria
+const nuevoMueble = document.createElement('li');
+ 
+// 3. Le damos contenido
+nuevoMueble.textContent = 'Sofá Cama';
+nuevoMueble.classList.add('nuevo-item'); // ¡También le podemos añadir clases!
+ 
+// 4. Lo añadimos al final de la lista <ul>
+listaCatalogo.appendChild(nuevoMueble);
+
+const botonComprar = document.querySelector('#btn-comprar');
+
+// Escuchando Eventos del Usuario 
+botonComprar.addEventListener('click', function() {
+  alert('¡Gracias por tu interés! Producto añadido al carrito.');
+});
