@@ -1,10 +1,14 @@
 // =======================
 // ARRAYS (listas en JS)
 // =======================
-
+const producto1 = 'Silla de Comedor';
+const producto2 = 'Mesa de Centro';
+const producto3 = 'Sofá de 3 Cuerpos';
+const producto4 = 'Estantería';
+const producto5 = 'Escritorio';
 // Un array de strings (texto)
 const catalogoMuebles = ['Silla de Comedor', 'Mesa de Centro', 'Sofá de 3 Cuerpos', 'Estantería'];
-
+console.log('Producto 1: ', catalogoMuebles[0]); // → ['Silla de Comedor', 'Mesa de Centro', 'Sofá de 3 Cuerpos', 'Estantería']
 // Un array de números
 const precios = [4500, 25000, 80000, 12000];
 
@@ -95,7 +99,6 @@ sillaGamer.garantia = "2 años";
 
 console.log(sillaGamer); 
 // Ahora tiene enStock: false y garantía: "2 años"
-
 
 // =======================
 // OBJETOS con MÉTODOS
