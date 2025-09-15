@@ -83,3 +83,8 @@ async function obtenerProducto(id) {
 }
  
 obtenerProducto(1); // Pedimos el producto con ID 1
+
+new Promise((resolve, reject) => {
+  /* Si fue resuelto, resolve (Promesa cumplida)
+  Si fue rechazado, reject (Promesa rechazada) */
+})

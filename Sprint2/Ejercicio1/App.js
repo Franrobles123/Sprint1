@@ -48,3 +48,4 @@ catalogoMuebles.forEach(producto => {
   // Agregar la tarjeta al contenedor
   container.appendChild(card);
 });
+
